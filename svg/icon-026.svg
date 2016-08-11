@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="icon-026" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="2048px" height="2048px" viewBox="0 0 2048 2048" enable-background="new 0 0 2048 2048" xml:space="preserve">
+<g>
+	<circle fill="#231F20" cx="831.898" cy="1599.733" r="127.898"/>
+	<circle fill="#231F20" cx="1472.102" cy="1599.733" r="127.898"/>
+	<path fill="#231F20" d="M1667.811,511.833v0.001h-0.061l-27.986,128.333l-950.831-0.333L640,383.834l-0.006,0.001H190.909v128
+		h343.092l169.999,896h131.732H1472h131.75l192-896L1667.811,511.833z M1499.822,1279.835H811.655l-98.256-512l898.638-0.793
+		l-0.256,1.169L1499.822,1279.835z"/>
+	<polygon fill="#231F20" points="832,831.835 896,1215.835 1024,1215.835 960,831.835 	"/>
+	<polygon fill="#231F20" points="1472,831.835 1408,1215.835 1280,1215.835 1344,831.835 	"/>
+	<rect x="1088" y="831.835" fill="#231F20" width="128" height="384"/>
+</g>
+</svg>

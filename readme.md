@@ -1,0 +1,2 @@
+# Yoshino Icon Set
+The Yoshino UI Icons. Each icon is available in two different sizes (regular & small), as Adobe Illustrator file and as (unkompressed) SVG file. Furthermore, this repository includes the source file for [Glyph Mini](https://glyphsapp.com/glyphs-mini) to export the icons as a font. Ready-to-use web font files are included, too.
