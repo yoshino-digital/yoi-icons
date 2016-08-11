@@ -1,0 +1,16 @@
+{
+  "name": "yoshino-icons",
+  "description": "The Yoshino icon set. Ai, svg & web font.",
+  "homepage": "https://github.com/yoshino-digital/icons",
+  "authors": [
+    "yoshino.digital dev team"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
