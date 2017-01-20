@@ -1,0 +1,28 @@
+{
+  "name": "yoi-icons",
+  "version": "0.0.1",
+  "description": "The YOI icon set. Source files (.ai & .svg) plus a simple PHP script to deliver SVGs with dynamic values like color and size.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshino-digital/yoi-icons.git"
+  },
+  "keywords": [
+    "SVG",
+    "icons",
+    "generator"
+  ],
+  "author": "Yoshino Digital GmbH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoshino-digital/yoi-icons/issues"
+  },
+  "homepage": "https://github.com/yoshino-digital/yoi-icons#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-svgmin": "^1.2.3"
+  }
+}
