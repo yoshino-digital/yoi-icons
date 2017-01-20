@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 2048 2048"><path d="M1728 895.835h-576v-576H896v576H320v256h576v576h256v-576h576z"/></svg>
+<?php echo '<svg xmlns="http://www.w3.org/2000/svg" width="' . $width . '" height="' . $height . '" viewBox="0 0 ' . $width . ' ' . $height . '"><path d="M1728 895.835h-576v-576H896v576H320v256h576v576h256v-576h576z"/></svg>'; ?>
