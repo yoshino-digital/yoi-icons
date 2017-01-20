@@ -1,1 +1,1 @@
-<?php echo '<svg xmlns="http://www.w3.org/2000/svg" width="' . $width . '" height="' . $height . '" viewBox="0 0 ' . $width . ' ' . $height . '"><path fill="' . $fillColor . '" d="M704 1215.835h640l-320-480z"/></svg>'; ?>
+<?php echo '<svg xmlns="http://www.w3.org/2000/svg" width="' . $width . '" height="' . $height . '" viewBox="0 0 2048 2048"><path fill="#' . $fillColor . '" d="M704 1215.835h640l-320-480z"/></svg>'; ?>

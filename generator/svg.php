@@ -22,12 +22,12 @@
     $id          = processGetVariable('id', '0');
     $height      = processGetVariable('h', '100');
     $width       = processGetVariable('w', '100');
-    $fillColor   = processGetVariable('f', 'purple');
-    $strokeColor = processGetVariable('s', 'black');
+    $fillColor   = processGetVariable('f', '#ffffff');
+    $strokeColor = processGetVariable('s', '#000000');
 
     // include the svg
     
-    include $id . '.svg.php';
+    include 'svg/' . $id . '.svg.php';
     
     // helper functions
 

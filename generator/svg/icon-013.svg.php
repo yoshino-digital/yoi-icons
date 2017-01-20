@@ -1,1 +1,1 @@
-<?php echo '<svg xmlns="http://www.w3.org/2000/svg" width="' . $width . '" height="' . $height . '" viewBox="0 0 ' . $width . ' ' . $height . '"><path d="M768 319.835l-256 256v1152h1024v-1408H768zm640 1280H640v-896h256v-256h512v1152z"/></svg>'; ?>
+<?php echo '<svg xmlns="http://www.w3.org/2000/svg" width="' . $width . '" height="' . $height . '" viewBox="0 0 2048 2048"><path fill="#' . $fillColor . '" d="M768 319.835l-256 256v1152h1024v-1408H768zm640 1280H640v-896h256v-256h512v1152z"/></svg>'; ?>
