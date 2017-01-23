@@ -18,21 +18,32 @@
     header('Content-type: image/svg+xml');
 
     // get the parameters
-    
+
     $id          = processGetVariable('id', '0');
     $height      = processGetVariable('h', '100');
     $width       = processGetVariable('w', '100');
     $fillColor   = processGetVariable('f', '#ffffff');
     $strokeColor = processGetVariable('s', '#000000');
 
-    // include the svg
+    // set the file name
     
-    include 'svg/' . $id . '.svg.php';
+    $fileName = $id . '.svg.php';
     
+    // if it exists, include the file,
+    // otherwise terminate the script
+    
+    // if (file_exists('./generator/svg/' . $fileName)) {
+    //     include 'svg/' . $fileName;
+    // } else {
+    //     die();
+    // }
+    
+    include 'svg/' . $fileName;
+
     // helper functions
 
     function processGetVariable($varName, $defaultValue) {
-        
+    
         /**
          *  Checks if $varName is a valid GET variable. Returns the
          *  variable value if valid, otherwise returns the supplied
@@ -42,9 +53,7 @@
          *  @param  {string} $defaultValue - the chosen default value
          *  @return {string}               - either the GET variable's value or the default value
          */
-        
-        return (isset($_GET[$varName]) AND !empty($_GET[$varName])) ? $_GET[$varName] : $defaultValue;
-        
-    }
     
-?>
+        return (isset($_GET[$varName]) AND !empty($_GET[$varName])) ? $_GET[$varName] : $defaultValue;
+    
+    }
