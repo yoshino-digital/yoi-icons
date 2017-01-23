@@ -27,18 +27,18 @@
 
     // set the file name
     
-    $fileName = $id . '.svg.php';
+    $fileName = 'svg/' . $id . '.svg.php';
     
-    // if it exists, include the file,
-    // otherwise terminate the script
+    // check if the file exists, end script
+    // if not
     
-    // if (file_exists('./generator/svg/' . $fileName)) {
-    //     include 'svg/' . $fileName;
+    // if (file_exists('svg/' . $fileName)) {
+    //     require $fileName;
     // } else {
     //     die();
     // }
     
-    include 'svg/' . $fileName;
+    require $fileName;
 
     // helper functions
 
