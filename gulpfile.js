@@ -62,15 +62,15 @@ gulp.task('format', function() {
 
     return gulp.src('./generator/svg/*')
         .pipe(replace([
-            ["<svg ", "<?php echo '<svg "],                                         // insert PHP start-tag and echo command
-            [/width=["']([^'"]+)/, 'width="' + "' . $width . '"],                   // insert $width PHP-variable
-            [/height=["']([^'"]+)/, 'height="' + "' . $height . '"],                // insert $height PHP-variable
-            [/fill=["']([^'"]+)/, 'fill="#' + "' . $fillColor . '"],                // insert $fillColor PHP-variable
-            [/stroke=["']([^'"]+)/, 'stroke="#' + "' . $strokeColor . '"],          // insert $strokeColor PHP-variable
-            ["path d", "path " + 'fill="#' + "' . $fillColor . '" + '" d'],         // insert $fillColor PHP-variable on SVG path-elements without fill-attribute
-            ["circle cx", "circle " + 'fill="#' + "' . $fillColor . '" + '" cx'],   // insert $fillColor PHP-variable on SVG circle-elements without fill-attribute
-            ["ellipse cx", "ellipse " + 'fill="#' + "' . $fillColor . '" + '" cx'], // insert $fillColor PHP-variable on SVG ellipse-elements without fill-attribute
-            ["</svg>", "</svg>'; ?>"]
+            ["<svg ", "<?php echo '<svg "],                                        // insert PHP start-tag and echo command
+            [/width=["']([^'"]+)/, 'width="' + "' . $width . '"],                  // insert $width PHP-variable
+            [/height=["']([^'"]+)/, 'height="' + "' . $height . '"],               // insert $height PHP-variable
+            [/fill=["']([^'"]+)/, 'fill="' + "' . $fillColor . '"],                // insert $fillColor PHP-variable
+            [/stroke=["']([^'"]+)/, 'stroke="' + "' . $strokeColor . '"],          // insert $strokeColor PHP-variable
+            ["path d", "path " + 'fill="' + "' . $fillColor . '" + '" d'],         // insert $fillColor PHP-variable on SVG path-elements without fill-attribute
+            ["circle cx", "circle " + 'fill="' + "' . $fillColor . '" + '" cx'],   // insert $fillColor PHP-variable on SVG circle-elements without fill-attribute
+            ["ellipse cx", "ellipse " + 'fill="' + "' . $fillColor . '" + '" cx'], // insert $fillColor PHP-variable on SVG ellipse-elements without fill-attribute
+            ["</svg>", "</svg>';"]                                                 // insert closing characters
         ]))
         .pipe(gulp.dest('./generator/svg'));
 
