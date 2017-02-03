@@ -45,10 +45,11 @@
         // set aria-related attributes
 
         $ariaAttributes  = 'role="img"';
-        $ariaAttributes .= ($ariaHidden != true ? ' aria-labelledby="' : '');
-        $ariaAttributes .= ($ariaHidden != true && $ariaTitle ? 'title' : '');
-        $ariaAttributes .= ($ariaHidden != true && $ariaDescr ? ' desc' : '');
-        $ariaAttributes .= ($ariaHidden != true ? '"' : '');
+        $ariaAttributes .= ($ariaTitle || $ariaDescr ? ' aria-labelledby="' : '');
+        $ariaAttributes .= ($ariaTitle ? 'title' : '');
+        $ariaAttributes .= ($ariaTitle && $ariaDescr ? ' ' : '');
+        $ariaAttributes .= ($ariaDescr ? 'desc' : '');
+        $ariaAttributes .= ($ariaTitle || $ariaDescr ? '"' : '');
         $ariaAttributes .= ($ariaHidden == 'true' ? ' aria-hidden="true"' : '');
 
         // set aria-related tags
