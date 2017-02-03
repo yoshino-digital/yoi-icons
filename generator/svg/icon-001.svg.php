@@ -1,1 +1,1 @@
-<?php echo '<svg xmlns="http://www.w3.org/2000/svg" width="' . $width . '" height="' . $height . '" viewBox="0 0 2048 2048"><path fill="' . $fillColor . '" d="M1408 1663.835v-1280l-960 640z"/></svg>'; ?>
+<?php echo '<svg xmlns="http://www.w3.org/2000/svg" ' . $ariaAttributes . ' width="' . $width . '" height="' . $height . '" viewBox="0 0 2048 2048"><path fill="' . $fillColor . '" d="M1408 1663.835v-1280l-960 640z"/>' . $ariaTags . '</svg>';
