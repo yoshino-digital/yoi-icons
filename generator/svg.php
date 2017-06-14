@@ -13,6 +13,15 @@
      *  fill color and blue outline.
      */
     
+    // header
+    // ======
+    
+    // Set the header to allow cross-domain ajax calls.
+    // This example is pre-configured for use with browser-sync (browsersync.io) and localhost on port 3000.
+    // Make sure you set browser-sync's CORS option to TRUE (browsersync.io/docs/options#option-cors).
+    
+    header('Access-Control-Allow-Origin: http://localhost:3000');
+    
     // settings
     // ========
     
