@@ -28,8 +28,8 @@
     $defaultId          = 0;
     $defaultWidth       = 32;
     $defaultheight      = 32;
-    $defaultFillColor   = '#6754a1';
-    $defaultStrokeColor = '#6754a1';
+    $defaultFillColor   = '#535251';
+    $defaultStrokeColor = '#535251';
     
     // generate the svg file
     // =====================
