@@ -68,11 +68,11 @@ gulp.task('format', function() {
             ['xmlns="http://www.w3.org/2000/svg"', 'xmlns="http://www.w3.org/2000/svg" ' + "' . $ariaAttributes . '"], // $ariaAttributes
             [/width=["']([^'"]+)/, 'width="' + "' . $width . '"],                                                      // $width PHP-variable
             [/height=["']([^'"]+)/, 'height="' + "' . $height . '"],                                                   // $height PHP-variable
-            [/fill=["']([^'"]+)/, 'fill="' + "' . $fillColor . '"],                                                    // $fillColor PHP-variable
+            [/fill=["']([^'"]+)/, 'fill="#' + "' . $fillColor . '"],                                                    // $fillColor PHP-variable
             [/stroke=["']([^'"]+)/, 'stroke="' + "' . $strokeColor . '"],                                              // $strokeColor PHP-variable
-            ["path d", "path " + 'fill="' + "' . $fillColor . '" + '" d'],                                             // $fillColor PHP-variable on SVG path-elements without fill-attribute
-            ["circle cx", "circle " + 'fill="' + "' . $fillColor . '" + '" cx'],                                       // $fillColor PHP-variable on SVG circle-elements without fill-attribute
-            ["ellipse cx", "ellipse " + 'fill="' + "' . $fillColor . '" + '" cx'],                                     // $fillColor PHP-variable on SVG ellipse-elements without fill-attribute
+            ["path d", "path " + 'fill="#' + "' . $fillColor . '" + '" d'],                                             // $fillColor PHP-variable on SVG path-elements without fill-attribute
+            ["circle cx", "circle " + 'fill="#' + "' . $fillColor . '" + '" cx'],                                       // $fillColor PHP-variable on SVG circle-elements without fill-attribute
+            ["ellipse cx", "ellipse " + 'fill="#' + "' . $fillColor . '" + '" cx'],                                     // $fillColor PHP-variable on SVG ellipse-elements without fill-attribute
             ["</svg>", "' . $ariaTags . '</svg>';"]                                                                    // closing characters and $ariaTags
         ]))
         .pipe(gulp.dest('./generator/svg'));
